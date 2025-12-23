@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Uptotechsyl</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    
+    <script>
+        window.tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#D4AF37', 
+                        dark: '#050505',
+                    },
+                    fontFamily: { sans: ['Inter', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-[#050505] text-white font-sans">
+<header id="main-header" class="fixed w-full top-0 z-[100] bg-black/70 backdrop-blur-md border-b border-white/10 transition-all duration-300">
+  <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+          <a href="index.html">
+              <img src="logo.jpg" alt="Uptotechsyl Logo" class="h-12 md:h-12 hover:scale-105 transition-transform duration-300">
+          </a>
+      </div>
+      <div class="hidden lg:flex space-x-8 font-medium">
+          <a href="index.html#home" class="text-white hover:text-primary transition-colors duration-300">Home</a>
+          <a href="service.html" class="text-white hover:text-primary transition-colors duration-300">Service</a>
+          <a href="about.html" class="text-white hover:text-primary transition-colors duration-300">About</a>
+          <a href="portfolio.html" class="text-white hover:text-primary transition-colors duration-300">Portfolio</a>
+          <a href="contact.html" class="text-white hover:text-primary transition-colors duration-300">Contact</a>
+      </div>
+
+      <div class="hidden lg:flex items-center space-x-6">
+          <button class="text-white text-xl hover:text-primary transition-all duration-300">
+              <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+          <a href="contact.html" class="bg-primary text-black px-8 py-3 rounded-full font-bold shadow-lg uppercase text-sm tracking-wider hover:bg-white transition-all">
+            Contact Us
+          </a>
+      </div>
+
+      <button id="menu-btn" class="lg:hidden text-white text-2xl focus:outline-none">
+          <i class="fa-solid fa-bars-staggered transition-all duration-300"></i>
+      </button>
+  </nav>
+
+  <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-black/95 backdrop-blur-xl text-white flex-col p-8 space-y-6 shadow-2xl border-t border-white/10 lg:hidden">
+      <a href="index.html#home" class="text-xl font-semibold hover:text-primary">Home</a>
+      <a href="service.html" class="text-xl font-semibold hover:text-primary">Service</a>
+      <a href="about.html" class="text-xl font-semibold hover:text-primary">About</a>
+      <a href="portfolio.html" class="text-xl font-semibold hover:text-primary">Portfolio</a>
+      <a href="contact.html" class="text-xl font-semibold hover:text-primary">Contact</a>
+      <a href="contact.html" class="bg-primary text-black text-center py-4 rounded-xl font-bold text-lg uppercase">Contact Us</a>
+  </div>
+</header>
+
+<section class="pt-40 pb-16 text-center bg-gradient-to-b from-primary/10 to-transparent">
+    <h1 class="text-4xl md:text-5xl font-black mb-4 text-white uppercase tracking-tighter">Empowering Your <span class="text-primary">Digital Vision</span></h1>
+    <p class="text-gray-400 max-w-2xl mx-auto text-lg px-6">We are a team of creative thinkers and tech enthusiasts dedicated to scaling your business globally with precision and style.</p>
+</section>
+
+<section id="about-content" class="py-20 px-6">
+    <div class="container mx-auto grid md:grid-cols-2 gap-16 items-center">
+        <div class="relative group">
+            <div class="absolute -inset-1 bg-primary/20 rounded-3xl blur opacity-25 group-hover:opacity-60 transition duration-1000"></div>
+            <div class="relative bg-black rounded-3xl overflow-hidden border border-white/10">
+                <img src="about-us.jpg" alt="Our Team" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-700 transform group-hover:scale-105">
+            </div>
+        </div>
+
+        <div class="about-text">
+            <h2 class="text-2xl font-bold mb-6 text-white uppercase tracking-wider">Who We <span class="text-primary underline decoration-4 underline-offset-8">Are</span></h2>
+            <p class="text-gray-300 leading-relaxed mb-8 text-lg">
+                Founded with a passion for innovation, <strong class="text-primary">Uptotechsyl</strong> helps brands navigate the complex digital landscape. We create premium experiences that drive measurable results.
+            </p>
+            <div class="grid grid-cols-2 gap-6 mb-8">
+    <div class="group bg-white/5 border border-white/10 p-6 rounded-2xl hover:bg-primary transition-all duration-500 cursor-default">
+        <h3 class="text-3xl font-black text-primary group-hover:text-black transition-colors duration-300">150+</h3>
+        <p class="text-gray-400 text-xs uppercase tracking-widest mt-1 group-hover:text-black/80 transition-colors duration-300">Projects Completed</p>
+    </div>
+    
+    <div class="group bg-white/5 border border-white/10 p-6 rounded-2xl hover:bg-primary transition-all duration-500 cursor-default">
+        <h3 class="text-3xl font-black text-primary group-hover:text-black transition-colors duration-300">99%</h3>
+        <p class="text-gray-400 text-xs uppercase tracking-widest mt-1 group-hover:text-black/80 transition-colors duration-300">Satisfied Clients</p>
+    </div>
+</div>
+            
+            <ul class="space-y-4 mb-8">
+                <li class="flex items-center group cursor-default p-2 rounded-xl transition-all hover:bg-primary">
+                    <i class="bx bx-check-circle text-primary mr-3 text-2xl group-hover:text-black"></i> 
+                    <span class="text-gray-300 group-hover:text-black transition-colors">Experienced Team</span>
+                </li>
+                <li class="flex items-center group cursor-default p-2 rounded-xl transition-all hover:bg-primary">
+                    <i class="bx bx-check-circle text-primary mr-3 text-2xl group-hover:text-black"></i> 
+                    <span class="text-gray-300 group-hover:text-black transition-colors">Quality Service</span>
+                </li>
+                <li class="flex items-center group cursor-default p-2 rounded-xl transition-all hover:bg-primary">
+                    <i class="bx bx-check-circle text-primary mr-3 text-2xl group-hover:text-black"></i> 
+                    <span class="text-gray-300 group-hover:text-black transition-colors">Affordable Pricing</span>
+                </li>
+                <li class="flex items-center group cursor-default p-2 rounded-xl transition-all hover:bg-primary">
+                    <i class="bx bx-check-circle text-primary mr-3 text-2xl group-hover:text-black"></i> 
+                    <span class="text-gray-300 group-hover:text-black transition-colors">24/7 Support</span>
+                </li>
+                <li class="flex items-center group cursor-default p-2 rounded-xl transition-all hover:bg-primary">
+                    <i class="bx bx-check-circle text-primary mr-3 text-2xl group-hover:text-black"></i> 
+                    <span class="text-gray-300 group-hover:text-black transition-colors">Pay Only After You Are Satisfied</span>
+                </li>
+            </ul>
+
+            <a href="contact.html" class="inline-block bg-primary text-black px-10 py-4 rounded-full font-black uppercase tracking-widest text-sm shadow-xl hover:bg-white transition-all">
+                Work With Us
+            </a>
+        </div>
+    </div>
+</section>
+<section class="py-20 bg-white/[0.02] border-y border-white/5">
+    <div class="container mx-auto px-6 text-center">
+        <h2 class="text-4xl font-black mb-4 uppercase tracking-tighter text-white">Our Core Values</h2>
+        <div class="w-20 h-1 bg-primary mx-auto mb-16"></div>
+        <div class="grid md:grid-cols-3 gap-12">
+            
+            <div class="group p-8 rounded-3xl border border-white/5 hover:bg-primary transition-all duration-300 cursor-default">
+                <div class="w-20 h-20 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-6 border border-primary/20 group-hover:bg-white group-hover:rotate-6 transition-all duration-500">
+                    <i class='bx bx-rocket text-4xl text-primary group-hover:text-black transition-colors'></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-white group-hover:text-black transition-colors">Innovation</h3>
+                <p class="text-gray-500 text-sm group-hover:text-black/80 transition-colors">We stay ahead of global trends to provide the latest tech solutions.</p>
+            </div>
+
+            <div class="group p-8 rounded-3xl border border-white/5 hover:bg-primary transition-all duration-500 cursor-default">
+                <div class="w-20 h-20 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-6 border border-primary/20 group-hover:bg-white group-hover:rotate-6 transition-all duration-500">
+                    <i class='bx bx-target-lock text-4xl text-primary group-hover:text-black transition-colors'></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-white group-hover:text-black transition-colors">Quality First</h3>
+                <p class="text-gray-500 text-sm group-hover:text-black/80 transition-colors">No compromise on code quality or premium design aesthetics.</p>
+            </div>
+
+            <div class="group p-8 rounded-3xl border border-white/5 hover:bg-primary transition-all duration-500 cursor-default">
+                <div class="w-20 h-20 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-6 border border-primary/20 group-hover:bg-white group-hover:rotate-6 transition-all duration-500">
+                    <i class='bx bx-support text-4xl text-primary group-hover:text-black transition-colors'></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-white group-hover:text-black transition-colors">24/7 Support</h3>
+                <p class="text-gray-500 text-sm group-hover:text-black/80 transition-colors">Our relationship continues with dedicated support after delivery.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section id="team-section" class="py-24 bg-black">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+            <h4 class="text-primary font-bold uppercase tracking-widest mb-2 italic">Meet Our Team</h4>
+            <h2 class="text-4xl md:text-4xl font-black uppercase tracking-tight text-white">The professionals behind our <span class="text-primary">success</span></h2>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="team-card bg-white/5 border border-white/10 p-8 rounded-3xl text-center group hover:bg-primary transition-all duration-500">
+                <div class="relative w-32 h-32 mx-auto mb-6 overflow-hidden rounded-2xl border border-white/10">
+                    <img src="araf.jpeg" alt="Shoumo" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all">
+                </div>
+                <h3 class="text-xl font-bold text-white mb-1 group-hover:text-black">Shoumo Shahriar Araf</h3>
+                <p class="text-primary text-xs font-bold uppercase mb-4 group-hover:text-black/80 tracking-tighter">Project Manager</p>
+                <div class="flex justify-center space-x-4 text-gray-500 group-hover:text-black text-lg border-t border-white/10 group-hover:border-black/20 pt-4">
+                    <a href="#"><i class='bx bxl-linkedin-square'></i></a>
+                    <a href="#"><i class='bx bxl-github'></i></a>
+                </div>
+            </div>
+            <div class="team-card bg-white/5 border border-white/10 p-8 rounded-3xl text-center group hover:bg-primary transition-all duration-500">
+                <div class="relative w-32 h-32 mx-auto mb-6 overflow-hidden rounded-2xl border border-white/10">
+                    <img src="ripa.jpeg" alt="Ripa" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all">
+                </div>
+                <h3 class="text-xl font-bold text-white mb-1 group-hover:text-black">Ripa</h3>
+                <p class="text-primary text-xs font-bold uppercase mb-4 group-hover:text-black/80 tracking-tighter">Laravel Expert</p>
+                <div class="flex justify-center space-x-4 text-gray-500 group-hover:text-black text-lg border-t border-white/10 group-hover:border-black/20 pt-4">
+                    <a href="#"><i class='bx bxl-linkedin-square'></i></a>
+                    <a href="#"><i class='bx bxl-github'></i></a>
+                </div>
+            </div>
+            <div class="team-card bg-white/5 border border-white/10 p-8 rounded-3xl text-center group hover:bg-primary transition-all duration-500">
+                <div class="relative w-32 h-32 mx-auto mb-6 overflow-hidden rounded-2xl border border-white/10">
+                    <img src="hasan.jpeg" alt="Hasan" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all">
+                </div>
+                <h3 class="text-xl font-bold text-white mb-1 group-hover:text-black">Hasan Md. Eyahiya</h3>
+                <p class="text-primary text-xs font-bold uppercase mb-4 group-hover:text-black/80 tracking-tighter">UI/UX Designer</p>
+                <div class="flex justify-center space-x-4 text-gray-500 group-hover:text-black text-lg border-t border-white/10 group-hover:border-black/20 pt-4">
+                    <a href="#"><i class='bx bxl-behance'></i></a>
+                    <a href="#"><i class='bx bxl-dribbble'></i></a>
+                </div>
+            </div>
+            <div class="team-card bg-white/5 border border-white/10 p-8 rounded-3xl text-center group hover:bg-primary transition-all duration-500">
+                <div class="relative w-32 h-32 mx-auto mb-6 overflow-hidden rounded-2xl border border-white/10">
+                    <img src="sritypic.jpeg" alt="Srity" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all">
+                </div>
+                <h3 class="text-xl font-bold text-white mb-1 group-hover:text-black">Srity</h3>
+                <p class="text-primary text-xs font-bold uppercase mb-4 group-hover:text-black/80 tracking-tighter">SEO Specialist</p>
+                <div class="flex justify-center space-x-4 text-gray-500 group-hover:text-black text-lg border-t border-white/10 group-hover:border-black/20 pt-4">
+                    <a href="#"><i class='bx bxl-facebook-square'></i></a>
+                    <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="bg-[#050505] text-white py-12 border-t border-white/5">
+    <div class="container mx-auto px-6 space-y-10">
+        <div class="flex justify-center mb-6">
+            <a href="index.html">
+                <img src="logo.jpg" alt="Uptotechsyl Logo" class="h-12 hover:scale-110 transition-transform duration-300">
+            </a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 text-center md:text-left">
+            <div class="space-y-4">
+                <h4 class="text-lg font-bold text-primary uppercase tracking-wider">Address</h4>
+                <div class="text-gray-400 text-sm space-y-2 leading-relaxed">
+                    <p><strong class="text-gray-200">Headquarter:</strong> Rezia Vhobon 60, Sagordighirpar Road No 11, Sylhet, Bangladesh</p>
+                    <p><strong class="text-gray-200">Contacts:</strong> +880 1852 471 826 | +880 1345589539</p>
+                    <p><strong class="text-gray-200">Email:</strong> contact@uptotechsyl.com</p>
+                    <p><strong class="text-gray-200">Hours:</strong> Sat–Thu 10am–6pm (Fri Closed)</p>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="text-lg font-bold mb-4 text-primary uppercase tracking-wider">Quick Links</h4>
+                <ul class="space-y-2 text-gray-400 text-sm font-medium">
+                    <li><a href="index.html#home" class="hover:text-primary transition-colors duration-300">Home</a></li>
+                    <li><a href="service.html" class="hover:text-primary transition-colors duration-300">Service</a></li>
+                    <li><a href="portfolio.html" class="hover:text-primary transition-colors duration-300">Portfolio</a></li>
+                    <li><a href="about.html" class="hover:text-primary transition-colors duration-300">About Us</a></li>
+                    <li><a href="index.html#contact" class="hover:text-primary transition-colors duration-300">Contact</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-lg font-bold mb-4 text-primary uppercase tracking-wider">Newsletter</h4>
+                <p class="mb-4 text-sm text-gray-400">Subscribe for latest tech updates.</p>
+                <div class="flex bg-white/5 border border-white/10 rounded-md overflow-hidden p-1 focus-within:border-primary transition-all">
+                    <input type="email" placeholder="Email Address" class="w-full px-4 py-2 outline-none bg-transparent text-white text-sm">
+                    <button class="btn-golden text-black px-5 py-2 rounded-md transition-all">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </div>
+                <p class="mt-4 text-sm font-semibold tracking-wide">
+                    <span class="text-primary">Hotline:</span> +880 181 908 8605
+                </p>
+            </div>
+        </div>
+
+        <div class="flex justify-center space-x-8 text-2xl pt-8 border-t border-white/5">
+            <a href="#" class="text-gray-500 hover:text-primary transition-all duration-300 transform hover:-translate-y-1"><i class='bx bxl-facebook'></i></a>
+            <a href="#" class="text-gray-400 hover:text-primary transition-all duration-300 transform hover:-translate-y-1"><i class='bx bxl-twitter'></i></a>
+            <a href="#" class="text-gray-400 hover:text-primary transition-all duration-300 transform hover:-translate-y-1"><i class='bx bxl-instagram'></i></a>
+            <a href="#" class="text-gray-400 hover:text-primary transition-all duration-300 transform hover:-translate-y-1"><i class='bx bxl-linkedin'></i></a>
+        </div>
+
+        <div class="text-center text-gray-600 text-xs tracking-widest pt-4">
+            <p>&copy; 2025 <span class="text-primary font-bold">uptotechsyl.com</span> All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

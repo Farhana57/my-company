@@ -1,0 +1,186 @@
+/* MASTER STYLESHEET - Uptotechsyl
+   Contains: Golden Theme, Hover Effects, Icon Fixes & Responsive Utilities
+*/
+
+:root {
+    --gold: #D4AF37;
+    --gold-light: #F9D976;
+    --gold-dark: #B8860B;
+    --primary-glow: rgba(212, 175, 55, 0.4);
+    --primary-glow-heavy: rgba(212, 175, 55, 0.8);
+}
+
+/* 1. Global Reset & Overrides */
+* {
+    transition: all 0.3s ease;
+}
+
+/* Force Golden Theme Across Tailwind Classes */
+.text-primary, .gold-text { color: var(--gold) !important; }
+.bg-primary { background-color: var(--gold) !important; }
+.border-primary { border-color: var(--gold) !important; }
+
+/* 2. Golden Button & Gradient Styles */
+.btn-golden, .btn-vorxus {
+    background: linear-gradient(45deg, var(--gold-dark), var(--gold-light), var(--gold-dark)) !important;
+    background-size: 200% auto !important;
+    color: #000 !important;
+    font-weight: 700 !important;
+    box-shadow: 0 4px 15px var(--primary-glow) !important;
+    border: none !important;
+    cursor: pointer;
+}
+
+.btn-golden:hover, .btn-vorxus:hover {
+    background-position: right center !important;
+    box-shadow: 0 0 25px var(--primary-glow-heavy) !important;
+    transform: translateY(-2px);
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, var(--gold-dark), var(--gold-light));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* হোভার করলে টেক্সট দেখানোর ম্যাজিক কোড */
+.group:hover .group-hover\:opacity-100 {
+    opacity: 1 !important;
+}
+
+.group:hover .group-hover\:scale-110 {
+    transform: scale(1.1);
+}
+
+/* টেক্সটগুলো যেন সুন্দরভাবে ভেসে ওঠে তার জন্য ট্রানজিশন */
+.group-hover\:opacity-100 {
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* যদি গোল্ডেন বাটন কালার না আসে তার জন্য */
+.btn-golden {
+    background: linear-gradient(45deg, #D4AF37, #F9E29C) !important;
+    color: black !important;
+    display: inline-block;
+}
+/* --- এই অংশটুকু আপডেট করুন --- */
+
+/* কার্ডে হোভার করলে আইকন এবং টেক্সট কালো করার ম্যাজিক কোড */
+.group:hover i, 
+.group:hover .bx, 
+.group:hover [class^="bx-"] {
+    color: #000000 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: scale(1.1);
+}
+
+/* কার্ডের সব ধরণের টেক্সট হোভারে কালো হবে */
+.group:hover h2,
+.group:hover h3,
+.group:hover p,
+.group:hover span,
+.group:hover li,
+.group:hover .text-gray-300,
+.group:hover .text-gray-400,
+.group:hover .text-white {
+    color: #000000 !important;
+}
+
+/* বাটনের কালার ফিক্স যাতে কালো ব্যাকগ্রাউন্ডে বাটন হারিয়ে না যায় */
+.group:hover a:not(.btn-golden) {
+    color: #000000 !important;
+}
+
+/* 4. Animations */
+@keyframes goldenPulse {
+    0%, 100% {
+        background: radial-gradient(circle, rgba(190, 148, 9, 0.4) 0%, transparent 70%);
+        opacity: 0.3;
+    }
+    50% {
+        background: radial-gradient(circle, rgba(212, 164, 6, 0.2) 0%, transparent 80%);
+        opacity: 0.8;
+    }
+}
+
+.animate-golden-pulse {
+    animation: goldenPulse 5s infinite ease-in-out;
+}
+
+/* 5. Mobile Menu & Navigation Utilities */
+#mobile-menu {
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.95);
+    border-left: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+/* Sticky Navbar fix */
+.nav-scrolled {
+    background: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+}
+
+/* 6. Pricing & About Image Overlays */
+.pricing-card:hover {
+    background-color: var(--gold) !important;
+}
+
+/* ইমেজ ওভারলে এর জন্য গ্লোবাল ক্লাস */
+.img-overlay-gold {
+    position: absolute;
+    inset: 0;
+    background: rgba(212, 175, 55, 0.2);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.group:hover .img-overlay-gold {
+    opacity: 1;
+}
+/* পাওয়ারফুল ওভাররাইড: যেকোনো Tailwind টেক্সট ক্লাসকে হোভারে কালো করবে */
+.group:hover * {
+    color: #000000 !important;
+}
+
+/* আইকন যাতে গায়েব না হয় সেটার জন্য */
+.group:hover i, 
+.group:hover svg,
+.group:hover [class*="bx-"] {
+    color: #000000 !important;
+    opacity: 1 !important;
+    fill: #000000 !important; /* SVG আইকনের জন্য */
+}
+
+/* বাটনের কালার যাতে নষ্ট না হয় (বাটন সাদাই থাকবে) */
+.group:hover a.btn-golden, 
+.group:hover a[class*="bg-black"],
+.group:hover button {
+    color: #ffffff !important;
+}
+/* আইকন হারানো রোধ করার চূড়ান্ত সমাধান */
+.group:hover i, 
+.group:hover .bx, 
+.group:hover [class^="bx-"],
+.group:hover [class*=" bx-"] {
+    color: #000000 !important; /* আইকন কালো হবে */
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: inline-block !important;
+}
+
+/* আইকন বক্সের ব্যাকগ্রাউন্ড যদি আইকনকে ঢেকে ফেলে তবে এটা ঠিক করবে */
+.group:hover .w-16, 
+.group:hover .w-20 {
+    background-color: rgba(0, 0, 0, 0.1) !important; /* হালকা কালো আভা */
+}
+/* প্রসেস সেকশনের ছোট আইকন বক্স ফিক্স */
+.group:hover .absolute.z-20 {
+    background-color: #000000 !important; /* ছোট সার্কেলটি কালো হবে */
+    border-color: #000000 !important;
+}
+
+.group:hover .absolute.z-20 i {
+    color: #D4AF37 !important; /* আইকনটি সোনালী হবে */
+    opacity: 1 !important;
+}
