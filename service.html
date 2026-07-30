@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uptotechsyl | Modern Digital services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        window.tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#D4AF37', 
+                        dark: '#050505',
+                    },
+                    fontFamily: { sans: ['Inter', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-[#050505] text-white font-sans">
+<header id="main-header" class="fixed w-full top-0 z-50 bg-black/70 backdrop-blur-md border-b border-white/10 transition-all duration-300">
+  <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+          <a href="index.html">
+              <img src="logo.jpg" alt="Uptotechsyl Logo" class="h-12 md:h-12 hover:scale-105 transition-transform duration-300">
+          </a>
+      </div>
+      <div class="hidden lg:flex space-x-8 font-medium">
+          <a href="index.html#home" class="text-white hover:text-primary transition-colors duration-300">Home</a>
+          <a href="service.html" class="text-white hover:text-primary transition-colors duration-300">Service</a>
+          <a href="about.html" class="text-white hover:text-primary transition-colors duration-300">About</a>
+          <a href="portfolio.html" class="text-white hover:text-primary transition-colors duration-300">Portfolio</a>
+          <a href="contact.html" class="text-white hover:text-primary transition-colors duration-300">Contact</a>
+      </div>
+
+      <div class="hidden lg:flex items-center space-x-6">
+          <button class="text-white text-xl hover:text-primary transition-all duration-300">
+              <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+          <a href="contact.html" class="btn-golden text-black px-8 py-3 rounded-full font-bold shadow-lg uppercase text-sm tracking-wider">
+            Contact Us
+          </a>
+      </div>
+
+      <button id="menu-btn" class="lg:hidden text-white text-2xl focus:outline-none">
+          <i class="fa-solid fa-bars-staggered transition-all duration-300"></i>
+      </button>
+  </nav>
+  <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-black/95 backdrop-blur-xl text-white flex-col p-8 space-y-6 shadow-2xl border-t border-white/10 lg:hidden transition-all duration-300">
+      <a href="index.html#home" class="text-xl font-semibold hover:text-primary transition-all">Home</a>
+      <a href="service.html" class="text-xl font-semibold hover:text-primary transition-all">Service</a>
+      <a href="about.html" class="text-xl font-semibold hover:text-primary transition-all">About</a>
+      <a href="portfolio.html" class="text-xl font-semibold hover:text-primary transition-all">Portfolio</a>
+      <a href="contact.html" class="text-xl font-semibold hover:text-primary transition-all border-b border-white/10 pb-4">Contact</a>
+      <a href="contact.html" class="btn-golden text-black text-center py-4 rounded-xl font-bold text-lg uppercase">
+          Contact Us
+      </a>
+  </div>
+</header>
+
+      <!-- Services Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <!-- Header -->
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <span class="text-primary font-semibold tracking-widest uppercase text-sm bg-primary/10 px-4 py-1.5 rounded-full border border-primary/20">Expert Digital Services</span>
+            <h2 class="text-4xl md:text-5xl font-extrabold mt-4 mb-6 tracking-tight">Elevate Your Business with Our Expertise</h2>
+            <p class="text-gray-400 text-base md:text-lg">We help ambitious businesses scale through modern design, robust development, and strategic marketing with a touch of excellence.</p>
+        </div>
+
+        <!-- Services Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- 1. Web Design & Dev -->
+            <div class="group bg-neutral-900/50 border border-white/10 rounded-2xl p-8 hover:bg-primary hover:border-primary transition-all duration-500 hover:-translate-y-2">
+                <div class="w-14 h-14 bg-primary/10 group-hover:bg-black/10 rounded-xl flex items-center justify-center text-primary group-hover:text-black text-2xl mb-6 transition-colors font-bold">💻</div>
+                <h3 class="font-bold text-2xl mb-3 text-white group-hover:text-black transition-colors">Web Design & Dev</h3>
+                <p class="text-gray-400 text-sm mb-6 group-hover:text-black/90 transition-colors leading-relaxed">Responsive and modern websites for your business using the latest tech stack.</p>
+                <ul class="space-y-2 text-sm text-gray-300 group-hover:text-black/90 border-t border-white/10 group-hover:border-black/20 pt-4">
+                    <li class="flex items-center gap-2">✓ Custom Web Apps</li>
+                    <li class="flex items-center gap-2">✓ E-commerce Solutions</li>
+                    <li class="flex items-center gap-2">✓ API Integration</li>
+                </ul>
+            </div>
+
+            <!-- 2. Video Editing -->
+            <div class="group bg-neutral-900/50 border border-white/10 rounded-2xl p-8 hover:bg-primary hover:border-primary transition-all duration-500 hover:-translate-y-2">
+                <div class="w-14 h-14 bg-primary/10 group-hover:bg-black/10 rounded-xl flex items-center justify-center text-primary group-hover:text-black text-2xl mb-6 transition-colors font-bold">🎬</div>
+                <h3 class="font-bold text-2xl mb-3 text-white group-hover:text-black transition-colors">Video Editing</h3>
+                <p class="text-gray-400 text-sm mb-6 group-hover:text-black/90 transition-colors leading-relaxed">Professional post-production, storytelling, and high-quality cinematic edits.</p>
+                <ul class="space-y-2 text-sm text-gray-300 group-hover:text-black/90 border-t border-white/10 group-hover:border-black/20 pt-4">
+                    <li class="flex items-center gap-2">✓ YouTube & Social Media</li>
+                    <li class="flex items-center gap-2">✓ Cinematic Color Grading</li>
+                    <li class="flex items-center gap-2">✓ Motion Graphics</li>
+                </ul>
+            </div>
+
+            <!-- 3. Digital Marketing -->
+            <div class="group bg-neutral-900/50 border border-white/10 rounded-2xl p-8 hover:bg-primary hover:border-primary transition-all duration-500 hover:-translate-y-2">
+                <div class="w-14 h-14 bg-primary/10 group-hover:bg-black/10 rounded-xl flex items-center justify-center text-primary group-hover:text-black text-2xl mb-6 transition-colors font-bold">📈</div>
+                <h3 class="font-bold text-2xl mb-3 text-white group-hover:text-black transition-colors">Digital Marketing</h3>
+                <p class="text-gray-400 text-sm mb-6 group-hover:text-black/90 transition-colors leading-relaxed">SEO, Social Media, and paid campaigns to grow your business presence.</p>
+                <ul class="space-y-2 text-sm text-gray-300 group-hover:text-black/90 border-t border-white/10 group-hover:border-black/20 pt-4">
+                    <li class="flex items-center gap-2">✓ Search Engine SEO</li>
+                    <li class="flex items-center gap-2">✓ Social Media Strategy</li>
+                    <li class="flex items-center gap-2">✓ Content Marketing</li>
+                </ul>
+            </div>
+
+            <!-- 4. Graphic Design -->
+            <div class="group bg-neutral-900/50 border border-white/10 rounded-2xl p-8 hover:bg-primary hover:border-primary transition-all duration-500 hover:-translate-y-2">
+                <div class="w-14 h-14 bg-primary/10 group-hover:bg-black/10 rounded-xl flex items-center justify-center text-primary group-hover:text-black text-2xl mb-6 transition-colors font-bold">🎨</div>
+                <h3 class="font-bold text-2xl mb-3 text-white group-hover:text-black transition-colors">Graphic Design</h3>
+                <p class="text-gray-400 text-sm mb-6 group-hover:text-black/90 transition-colors leading-relaxed">Creative visuals, logos, and branding that define your identity.</p>
+                <ul class="space-y-2 text-sm text-gray-300 group-hover:text-black/90 border-t border-white/10 group-hover:border-black/20 pt-4">
+                    <li class="flex items-center gap-2">✓ Logo & Branding</li>
+                    <li class="flex items-center gap-2">✓ Social Media Posts</li>
+                    <li class="flex items-center gap-2">✓ Print Design</li>
+                </ul>
+            </div>
+
+            <!-- 5. Website Maintenance -->
+            <div class="group bg-neutral-900/50 border border-white/10 rounded-2xl p-8 hover:bg-primary hover:border-primary transition-all duration-500 hover:-translate-y-2">
+                <div class="w-14 h-14 bg-primary/10 group-hover:bg-black/10 rounded-xl flex items-center justify-center text-primary group-hover:text-black text-2xl mb-6 transition-colors font-bold">🛡️</div>
+                <h3 class="font-bold text-2xl mb-3 text-white group-hover:text-black transition-colors">Website Maintenance</h3>
+                <p class="text-gray-400 text-sm mb-6 group-hover:text-black/90 transition-colors leading-relaxed">Keeping your website secure, updated, and performing at its best always.</p>
+                <ul class="space-y-2 text-sm text-gray-300 group-hover:text-black/90 border-t border-white/10 group-hover:border-black/20 pt-4">
+                    <li class="flex items-center gap-2">✓ Security Updates</li>
+                    <li class="flex items-center gap-2">✓ Performance Optimization</li>
+                    <li class="flex items-center gap-2">✓ Content Updates</li>
+                </ul>
+            </div>
+
+            <!-- 6. UI/UX Design -->
+            <div class="group bg-neutral-900/50 border border-white/10 rounded-2xl p-8 hover:bg-primary hover:border-primary transition-all duration-500 hover:-translate-y-2">
+                <div class="w-14 h-14 bg-primary/10 group-hover:bg-black/10 rounded-xl flex items-center justify-center text-primary group-hover:text-black text-2xl mb-6 transition-colors font-bold">✨</div>
+                <h3 class="font-bold text-2xl mb-3 text-white group-hover:text-black transition-colors">UI/UX Design</h3>
+                <p class="text-gray-400 text-sm mb-6 group-hover:text-black/90 transition-colors leading-relaxed">User-friendly interfaces and engaging experiences for all platforms.</p>
+                <ul class="space-y-2 text-sm text-gray-300 group-hover:text-black/90 border-t border-white/10 group-hover:border-black/20 pt-4">
+                    <li class="flex items-center gap-2">✓ User Research</li>
+                    <li class="flex items-center gap-2">✓ Wireframing</li>
+                    <li class="flex items-center gap-2">✓ Interactive Prototypes</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-white/10">
+        <!-- Header -->
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <span class="text-primary font-semibold tracking-widest uppercase text-sm bg-primary/10 px-4 py-1.5 rounded-full border border-primary/20">Flexible Investment</span>
+            <h2 class="text-4xl md:text-5xl font-extrabold mt-4 mb-6 tracking-tight">Choose Your Plan</h2>
+            <p class="text-gray-400 text-base md:text-lg">Select the right package that fits your business scale and goals.</p>
+        </div>
+
+        <!-- Pricing Cards Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+            
+            <!-- Starter Plan -->
+            <div class="bg-neutral-900/50 border border-white/10 rounded-3xl p-8 flex flex-col justify-between hover:border-primary/50 transition-all duration-300">
+                <div>
+                    <h3 class="text-2xl font-bold mb-2">Starter</h3>
+                    <p class="text-gray-400 text-sm mb-6">Best for small businesses getting started online.</p>
+                    <div class="text-4xl font-extrabold text-primary mb-6">$199</div>
+                    <ul class="space-y-4 text-sm text-gray-300 mb-8 border-t border-white/10 pt-6">
+                        <li class="flex items-center gap-3">✅ Basic Website Design</li>
+                        <li class="flex items-center gap-3">✅ Responsive Layout</li>
+                        <li class="flex items-center gap-3">✅ SEO Basic Setup</li>
+                    </ul>
+                </div>
+                <a href="service.html" class="w-full bg-white/10 hover:bg-primary hover:text-black font-semibold py-3 rounded-xl text-center transition-all duration-300 block">Select Plan</a>
+            </div>
+
+            <!-- Professional Plan (Most Popular) -->
+            <div class="bg-neutral-900 border-2 border-primary rounded-3xl p-8 flex flex-col justify-between relative shadow-2xl shadow-primary/10 transform lg:-translate-y-4">
+                <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-black text-xs font-bold uppercase tracking-wider px-4 py-1.5 rounded-full">Most Popular</div>
+                <div>
+                    <h3 class="text-2xl font-bold mb-2">Professional</h3>
+                    <p class="text-gray-400 text-sm mb-6">Ideal for growing brands looking for advanced solutions.</p>
+                    <div class="text-4xl font-extrabold text-primary mb-6">$499</div>
+                    <ul class="space-y-4 text-sm text-gray-300 mb-8 border-t border-white/10 pt-6">
+                        <li class="flex items-center gap-3">✅ Premium UI/UX Design</li>
+                        <li class="flex items-center gap-3">✅ E-commerce Ready</li>
+                        <li class="flex items-center gap-3">✅ Advanced SEO & Marketing</li>
+                    </ul>
+                </div>
+                <a href="contact.html" class="w-full bg-primary text-black hover:bg-primary/90 font-bold py-3 rounded-xl text-center transition-all duration-300 block shadow-lg shadow-primary/20">Get Started</a>
+            </div>
+
+            <!-- Enterprise Plan -->
+            <div class="bg-neutral-900/50 border border-white/10 rounded-3xl p-8 flex flex-col justify-between hover:border-primary/50 transition-all duration-300">
+                <div>
+                    <h3 class="text-2xl font-bold mb-2">Enterprise</h3>
+                    <p class="text-gray-400 text-sm mb-6">Custom-tailored solutions for large-scale operations.</p>
+                    <div class="text-4xl font-extrabold text-primary mb-6">Custom</div>
+                    <ul class="space-y-4 text-sm text-gray-300 mb-8 border-t border-white/10 pt-6">
+                        <li class="flex items-center gap-3">✅ Full Custom Solution</li>
+                        <li class="flex items-center gap-3">✅ Dedicated Support</li>
+                        <li class="flex items-center gap-3">✅ Unlimited Revisions</li>
+                    </ul>
+                </div>
+                <a href="contact.html" class="w-full bg-white/10 hover:bg-primary hover:text-black font-semibold py-3 rounded-xl text-center transition-all duration-300 block">Talk to Us</a>
+            </div>
+
+        </div>
+    </section>    
+          
+<footer class="bg-[#050505] text-white py-12 border-t border-white/5">
+    <div class="container mx-auto px-6 space-y-10">
+        <div class="flex justify-center mb-6">
+            <a href="index.html">
+                <img src="logo.jpg" alt="Uptotechsyl Logo" class="h-12 hover:scale-110 transition-transform duration-300">
+            </a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 text-center md:text-left">
+            <div class="space-y-4">
+                <h4 class="text-lg font-bold text-primary uppercase tracking-wider">Address</h4>
+                <div class="text-gray-400 text-sm space-y-2 leading-relaxed">
+                    <p><strong class="text-gray-200">Headquarter:</strong> Rezia Vhobon 60, Sagordighirpar Road No 11, Sylhet, Bangladesh</p>
+                    <p><strong class="text-gray-200">Contacts:</strong> +880 1852 471 826 | +880 1345589539</p>
+                    <p><strong class="text-gray-200">Email:</strong> contact@uptotechsyl.com</p>
+                    <p><strong class="text-gray-200">Hours:</strong> Sat–Thu 10am–6pm (Fri Closed)</p>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-4 text-primary uppercase tracking-wider">Quick Links</h4>
+                <ul class="space-y-2 text-gray-400 text-sm font-medium">
+                    <li><a href="index.html#home" class="hover:text-primary transition-colors duration-300">Home</a></li>
+                    <li><a href="service.html" class="hover:text-primary transition-colors duration-300">Service</a></li>
+                    <li><a href="portfolio.html" class="hover:text-primary transition-colors duration-300">Portfolio</a></li>
+                    <li><a href="about.html" class="hover:text-primary transition-colors duration-300">About Us</a></li>
+                    <li><a href="index.html#contact" class="hover:text-primary transition-colors duration-300">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-4 text-primary uppercase tracking-wider">Newsletter</h4>
+                <p class="mb-4 text-sm text-gray-400">Subscribe for latest tech updates.</p>
+                <div class="flex bg-white/5 border border-white/10 rounded-md overflow-hidden p-1 focus-within:border-primary transition-all">
+                    <input type="email" placeholder="Email Address" class="w-full px-4 py-2 outline-none bg-transparent text-white text-sm">
+                    <button class="btn-golden text-black px-5 py-2 rounded-md transition-all">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </div>
+                <p class="mt-4 text-sm font-semibold tracking-wide">
+                    <span class="text-primary">Hotline:</span> +880 181 908 8605
+                </p>
+            </div>
+        </div>
+        <div class="flex justify-center space-x-8 text-2xl pt-8 border-t border-white/5">
+            <a href="#" class="text-gray-500 hover:text-primary transition-all duration-300 transform hover:-translate-y-1"><i class='bx bxl-facebook'></i></a>
+            <a href="#" class="text-gray-400 hover:text-primary transition-all duration-300 transform hover:-translate-y-1"><i class='bx bxl-twitter'></i></a>
+            <a href="#" class="text-gray-400 hover:text-primary transition-all duration-300 transform hover:-translate-y-1"><i class='bx bxl-instagram'></i></a>
+            <a href="#" class="text-gray-400 hover:text-primary transition-all duration-300 transform hover:-translate-y-1"><i class='bx bxl-linkedin'></i></a>
+        </div>
+        <div class="text-center text-gray-600 text-xs tracking-widest pt-4">
+            <p>&copy; 2025 <span class="text-primary font-bold">UPTOTECHSYL</span>. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+    <script src="script.js"></script> 
+    <!-- Floating Action Buttons -->
+<div class="fixed bottom-6 right-6 z-[9999] flex flex-col gap-4">
+    
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/8801759945057" target="_blank" 
+       class="bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-110">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+    </a>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" 
+            class="bg-primary text-black w-14 h-14 rounded-full flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-110"
+            style="opacity: 0; visibility: hidden; transition: all 0.3s ease;">
+        <i class="fa-solid fa-arrow-up text-xl"></i>
+    </button>
+</div>
+<script>
+    (function() {
+        const numDots = 7;
+        const dots = [];
+        let mouse = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
+        
+        for (let i = 0; i < numDots; i++) {
+            const dot = document.createElement('div');
+            
+            // CSS Styling সরাসরি প্রয়োগ করা হলো যাতে কোনো ক্লাসের ঝামেলা না থাকে
+            dot.style.position = 'fixed';
+            dot.style.pointerEvents = 'none';
+            dot.style.borderRadius = '50%';
+            dot.style.backgroundColor = '#FFD700'; // উজ্জ্বল গোল্ডেন/হলুদ কালার
+            dot.style.zIndex = '2147483647'; // সবার উপরে ভেসে থাকার জন্য সর্বোচ্চ z-index
+            dot.style.top = '0px';
+            dot.style.left = '0px';
+            
+            // ছোট থেকে বড় সাইজ (সামনে ছোট, পেছনে বড়)
+            const size = Math.max(5, (i + 1) * 3.5); 
+            dot.style.width = size + 'px';
+            dot.style.height = size + 'px';
+            
+            // গাঢ় গ্লোয়িং শ্যাডো যাতে কাল কালো ব্যাকগ্রাউন্ডেও স্পষ্টভাবে উজ্জ্বল দেখায়
+            dot.style.boxShadow = '0 0 15px #FFD700, 0 0 5px #FFA500';
+            dot.style.opacity = (1 - (i / numDots) * 0.6).toFixed(2);
+            
+            dot.x = window.innerWidth / 2;
+            dot.y = window.innerHeight / 2;
+            
+            document.body.appendChild(dot);
+            dots.push(dot);
+        }
+
+        window.addEventListener('mousemove', (e) => {
+            mouse.x = e.clientX;
+            mouse.y = e.clientY;
+        });
+
+        function animateCursor() {
+            let currentX = mouse.x;
+            let currentY = mouse.y;
+
+            dots.forEach((dot, index) => {
+                dot.x += (currentX - dot.x) * (0.4 - index * 0.03);
+                dot.y += (currentY - dot.y) * (0.4 - index * 0.03);
+
+                // পজিশন আপডেট
+                dot.style.transform = `translate3d(${dot.x - (dot.offsetWidth / 2)}px, ${dot.y - (dot.offsetHeight / 2)}px, 0)`;
+
+                currentX = dot.x;
+                currentY = dot.y;
+            });
+
+            requestAnimationFrame(animateCursor);
+        }
+
+        requestAnimationFrame(animateCursor);
+
+        // মাউস উইন্ডোর বাইরে গেলে লুকিয়ে ফেলা
+        document.addEventListener('mouseleave', () => {
+            dots.forEach(dot => dot.style.opacity = '0');
+        });
+
+        document.addEventListener('mouseenter', () => {
+            dots.forEach((dot, index) => {
+                dot.style.opacity = (1 - (index / numDots) * 0.6).toFixed(2);
+            });
+        });
+    })();
+</script>
+</body>
+</html>

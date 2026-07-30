@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Uptotechsyl</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#D4AF37', // Golden color
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Contact Card Icon Fix */
+.contact-card:hover .fa-solid{
+    color:#D4AF37 !important;
+    transform:scale(1.1);
+}
+
+.contact-card:hover .w-16{
+    background:#000 !important;
+}
+    </style>
+</head>
+<body class="bg-[#050505] text-white font-sans">
+    <header id="main-header" class="fixed w-full top-0 z-50 bg-black/70 backdrop-blur-md border-b border-white/10 transition-all duration-300">
+        <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <a href="index.html">
+                    <img src="logo.jpg" alt="Uptotechsyl Logo" class="h-10 md:h-12 hover:scale-105 transition-transform duration-300">
+                </a>
+            </div>
+            <div class="hidden lg:flex space-x-8 font-medium">
+                <a href="index.html" class="text-white hover:text-primary transition-colors duration-300">Home</a>
+                <a href="service.html" class="text-white hover:text-primary transition-colors duration-300">Service</a>
+                <a href="about.html" class="text-white hover:text-primary transition-colors duration-300">About</a>
+                <a href="portfolio.html" class="text-white hover:text-primary transition-colors duration-300">Portfolio</a>
+                <a href="contact.html" class="text-primary font-bold">Contact</a>
+            </div>
+
+            <div class="hidden lg:flex items-center">
+                <a href="contact.html" class="btn-golden text-black px-8 py-3 rounded-full font-bold uppercase text-sm tracking-wider">
+                    Contact Us
+                </a>
+            </div>
+
+            <button id="menu-btn" class="lg:hidden text-white text-2xl focus:outline-none">
+                <i class="fa-solid fa-bars-staggered transition-all duration-300"></i>
+            </button>
+        </nav>
+
+        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-black/95 backdrop-blur-xl text-white flex-col p-8 space-y-6 shadow-2xl border-t border-white/10 lg:hidden transition-all duration-300">
+            <a href="index.html" class="text-xl font-semibold hover:text-primary">Home</a>
+            <a href="service.html" class="text-xl font-semibold hover:text-primary">Service</a>
+            <a href="about.html" class="text-xl font-semibold hover:text-primary">About</a>
+            <a href="portfolio.html" class="text-xl font-semibold hover:text-primary">Portfolio</a>
+            <a href="contact.html" class="text-xl font-semibold text-primary border-b border-white/10 pb-4">Contact</a>
+            <a href="contact.html" class="btn-golden text-black text-center py-4 rounded-xl font-bold text-lg uppercase">
+                Request a Quote
+            </a>
+        </div>
+    </header>
+
+    
+        <!-- ================= CONTACT SECTION ================= -->
+    <section id="contact-section" class="py-24 bg-[#050505] relative overflow-hidden">
+
+        <!-- Background Glow -->
+        <div class="absolute -top-32 -left-32 w-96 h-96 bg-primary/10 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-32 -right-32 w-96 h-96 bg-primary/10 rounded-full blur-3xl"></div>
+
+        <div class="container mx-auto px-6 relative z-10">
+
+            <!-- ================= CONTACT SECTION ================= -->
+    <section id="contact-section" class="py-24 bg-[#050505] relative overflow-hidden">
+
+        <!-- Background Glow Effects -->
+        <div class="absolute -top-32 -left-32 w-96 h-96 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-32 -right-32 w-96 h-96 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="container mx-auto px-6 relative z-10">
+
+            <!-- Section Heading -->
+            <div class="text-center mb-20">
+                <h4 class="text-primary uppercase tracking-[6px] font-bold mb-3">
+                    CONTACT US
+                </h4>
+                <h2 class="text-4xl md:text-5xl font-black uppercase text-white">
+                    Let's Work <span class="text-primary">Together</span>
+                </h2>
+                <p class="text-gray-400 mt-5 max-w-2xl mx-auto">
+                    Have a project in mind? We'd love to hear from you.
+                    Contact us today and let's build something amazing together.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+
+                <!-- ================= LEFT SIDE (Info & Map) ================= -->
+                <div class="space-y-8">
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                        <!-- Address Card -->
+                        <div class="contact-card bg-zinc-900/60 border border-white/5 rounded-3xl p-8 transition-all duration-500">
+                            <div class="icon-box w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-6 transition-all duration-500">
+                                <i class="fa-solid fa-location-dot text-2xl text-primary transition-all duration-500"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-3 transition-all duration-500">
+                                Office Address
+                            </h3>
+                            <p class="text-gray-400 leading-7 text-sm transition-all duration-500">
+                                Rezia Vhobon 60,<br>
+                                Sagordighirpar Road No-11,<br>
+                                Sylhet, Bangladesh.
+                            </p>
+                        </div>
+
+                        <!-- Phone Card -->
+                        <div class="contact-card bg-zinc-900/60 border border-white/5 rounded-3xl p-8 transition-all duration-500">
+                            <div class="icon-box w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-6 transition-all duration-500">
+                                <i class="fa-solid fa-phone-volume text-2xl text-primary transition-all duration-500"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-3 transition-all duration-500">
+                                Call Us
+                            </h3>
+                            <p class="text-gray-400 leading-7 text-sm transition-all duration-500">
+                                +880 1852 471826<br>
+                                +880 1345 589539
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <!-- Email Card -->
+                    <div class="contact-card bg-zinc-900/60 border border-white/5 rounded-3xl p-8 transition-all duration-500">
+                        <div class="icon-box w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-6 transition-all duration-500">
+                            <i class="fa-solid fa-envelope text-2xl text-primary transition-all duration-500"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 transition-all duration-500">
+                            Email Address
+                        </h3>
+                        <p class="text-gray-400 text-sm transition-all duration-500">
+                            info@uptotechsyl.com
+                        </p>
+                    </div>
+
+                    <!-- Google Map -->
+                    <div class="rounded-3xl overflow-hidden border border-white/10 h-80 shadow-lg">
+                        <iframe
+                            src="https://maps.google.com/maps?q=Sagordighirpar,%20Sylhet,%20Bangladesh&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                            width="100%"
+                            height="100%"
+                            style="border:0;"
+                            loading="lazy"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+
+                </div>
+
+                <!-- ================= RIGHT SIDE (Contact Form) ================= -->
+                <div class="bg-zinc-900/60 border border-white/5 rounded-3xl p-10 shadow-2xl relative overflow-hidden">
+
+                    <div class="absolute top-0 right-0 w-52 h-52 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
+
+                    <h3 class="text-3xl font-bold text-white mb-8 relative z-10">
+                        Send a <span class="text-primary">Message</span>
+                    </h3>
+
+                    <form class="space-y-6 relative z-10">
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                            <input
+                                type="text"
+                                placeholder="Your Name"
+                                required
+                                class="w-full bg-black/40 border border-white/10 rounded-xl px-5 py-4 text-white placeholder:text-gray-500 focus:outline-none focus:border-primary transition-all">
+
+                            <input
+                                type="email"
+                                placeholder="Email Address"
+                                required
+                                class="w-full bg-black/40 border border-white/10 rounded-xl px-5 py-4 text-white placeholder:text-gray-500 focus:outline-none focus:border-primary transition-all">
+                        </div>
+
+                        <input
+                            type="text"
+                            placeholder="Subject"
+                            required
+                            class="w-full bg-black/40 border border-white/10 rounded-xl px-5 py-4 text-white placeholder:text-gray-500 focus:outline-none focus:border-primary transition-all">
+
+                        <textarea
+                            rows="6"
+                            placeholder="Write your message..."
+                            required
+                            class="w-full bg-black/40 border border-white/10 rounded-xl px-5 py-4 text-white placeholder:text-gray-500 focus:outline-none focus:border-primary transition-all resize-none"></textarea>
+
+                        <button
+                            type="submit"
+                            class="w-full bg-primary text-black py-5 rounded-xl font-bold uppercase tracking-widest hover:bg-white transition-all duration-300 shadow-lg">
+                            Send Message
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+   
+   <footer class="bg-[#050505] text-white py-12 border-t border-white/5">
+    <div class="container mx-auto px-6 space-y-10">
+        <div class="flex justify-center mb-6">
+            <a href="index.html">
+                <img src="logo.jpg" alt="Uptotechsyl Logo" class="h-12 hover:scale-110 transition-transform duration-300">
+            </a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 text-center md:text-left">
+            <div class="space-y-4">
+                <h4 class="text-lg font-bold text-primary uppercase tracking-wider">Address</h4>
+                <div class="text-gray-400 text-sm space-y-2 leading-relaxed">
+                    <p><strong class="text-gray-200">Headquarter:</strong> Rezia Vhobon 60, Sagordighirpar Road No 11, Sylhet, Bangladesh</p>
+                    <p><strong class="text-gray-200">Contacts:</strong> +880 1852 471 826 | +880 1345589539</p>
+                    <p><strong class="text-gray-200">Email:</strong> contact@uptotechsyl.com</p>
+                    <p><strong class="text-gray-200">Hours:</strong> Sat–Thu 10am–6pm (Fri Closed)</p>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-4 text-primary uppercase tracking-wider">Quick Links</h4>
+                <ul class="space-y-2 text-gray-400 text-sm font-medium">
+                    <li><a href="index.html#home" class="hover:text-primary transition-colors duration-300">Home</a></li>
+                    <li><a href="service.html" class="hover:text-primary transition-colors duration-300">Service</a></li>
+                    <li><a href="portfolio.html" class="hover:text-primary transition-colors duration-300">Portfolio</a></li>
+                    <li><a href="about.html" class="hover:text-primary transition-colors duration-300">About Us</a></li>
+                    <li><a href="index.html#contact" class="hover:text-primary transition-colors duration-300">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-4 text-primary uppercase tracking-wider">Newsletter</h4>
+                <p class="mb-4 text-sm text-gray-400">Subscribe for latest tech updates.</p>
+                <div class="flex bg-white/5 border border-white/10 rounded-md overflow-hidden p-1 focus-within:border-primary transition-all">
+                    <input type="email" placeholder="Email Address" class="w-full px-4 py-2 outline-none bg-transparent text-white text-sm">
+                    <button class="btn-golden text-black px-5 py-2 rounded-md transition-all">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </div>
+                <p class="mt-4 text-sm font-semibold tracking-wide">
+                    <span class="text-primary">Hotline:</span> +880 181 908 8605
+                </p>
+            </div>
+        </div>
+        <div class="flex justify-center space-x-8 text-2xl pt-8 border-t border-white/5">
+            <a href="#" class="text-gray-500 hover:text-primary transition-all duration-300 transform hover:-translate-y-1"><i class='bx bxl-facebook'></i></a>
+            <a href="#" class="text-gray-400 hover:text-primary transition-all duration-300 transform hover:-translate-y-1"><i class='bx bxl-twitter'></i></a>
+            <a href="#" class="text-gray-400 hover:text-primary transition-all duration-300 transform hover:-translate-y-1"><i class='bx bxl-instagram'></i></a>
+            <a href="#" class="text-gray-400 hover:text-primary transition-all duration-300 transform hover:-translate-y-1"><i class='bx bxl-linkedin'></i></a>
+        </div>
+        <div class="text-center text-gray-600 text-xs tracking-widest pt-4">
+            <p>&copy; 2025 <span class="text-primary font-bold">UPTOTECHSYL</span>. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+    <script src="script.js"></script>
+    <!-- Floating Action Buttons -->
+<div class="fixed bottom-6 right-6 z-[9999] flex flex-col gap-4">
+    
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/8801759945057" target="_blank" 
+       class="bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-110">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+    </a>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" 
+            class="bg-primary text-black w-14 h-14 rounded-full flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-110"
+            style="opacity: 0; visibility: hidden; transition: all 0.3s ease;">
+        <i class="fa-solid fa-arrow-up text-xl"></i>
+    </button>
+</div>
+<script>
+    (function() {
+        const numDots = 7;
+        const dots = [];
+        let mouse = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
+        
+        for (let i = 0; i < numDots; i++) {
+            const dot = document.createElement('div');
+            
+            // CSS Styling সরাসরি প্রয়োগ করা হলো যাতে কোনো ক্লাসের ঝামেলা না থাকে
+            dot.style.position = 'fixed';
+            dot.style.pointerEvents = 'none';
+            dot.style.borderRadius = '50%';
+            dot.style.backgroundColor = '#FFD700'; // উজ্জ্বল গোল্ডেন/হলুদ কালার
+            dot.style.zIndex = '2147483647'; // সবার উপরে ভেসে থাকার জন্য সর্বোচ্চ z-index
+            dot.style.top = '0px';
+            dot.style.left = '0px';
+            
+            // ছোট থেকে বড় সাইজ (সামনে ছোট, পেছনে বড়)
+            const size = Math.max(5, (i + 1) * 3.5); 
+            dot.style.width = size + 'px';
+            dot.style.height = size + 'px';
+            
+            // গাঢ় গ্লোয়িং শ্যাডো যাতে কাল কালো ব্যাকগ্রাউন্ডেও স্পষ্টভাবে উজ্জ্বল দেখায়
+            dot.style.boxShadow = '0 0 15px #FFD700, 0 0 5px #FFA500';
+            dot.style.opacity = (1 - (i / numDots) * 0.6).toFixed(2);
+            
+            dot.x = window.innerWidth / 2;
+            dot.y = window.innerHeight / 2;
+            
+            document.body.appendChild(dot);
+            dots.push(dot);
+        }
+
+        window.addEventListener('mousemove', (e) => {
+            mouse.x = e.clientX;
+            mouse.y = e.clientY;
+        });
+
+        function animateCursor() {
+            let currentX = mouse.x;
+            let currentY = mouse.y;
+
+            dots.forEach((dot, index) => {
+                dot.x += (currentX - dot.x) * (0.4 - index * 0.03);
+                dot.y += (currentY - dot.y) * (0.4 - index * 0.03);
+
+                // পজিশন আপডেট
+                dot.style.transform = `translate3d(${dot.x - (dot.offsetWidth / 2)}px, ${dot.y - (dot.offsetHeight / 2)}px, 0)`;
+
+                currentX = dot.x;
+                currentY = dot.y;
+            });
+
+            requestAnimationFrame(animateCursor);
+        }
+
+        requestAnimationFrame(animateCursor);
+
+        // মাউস উইন্ডোর বাইরে গেলে লুকিয়ে ফেলা
+        document.addEventListener('mouseleave', () => {
+            dots.forEach(dot => dot.style.opacity = '0');
+        });
+
+        document.addEventListener('mouseenter', () => {
+            dots.forEach((dot, index) => {
+                dot.style.opacity = (1 - (index / numDots) * 0.6).toFixed(2);
+            });
+        });
+    })();
+    
+</script>
+</body>
+</html>
