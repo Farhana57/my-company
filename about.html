@@ -92,9 +92,13 @@
     <div class="container mx-auto grid md:grid-cols-2 gap-16 items-center">
         <div class="relative group">
             <div class="absolute -inset-1 bg-primary/20 rounded-3xl blur opacity-25 group-hover:opacity-60 transition duration-1000"></div>
-            <div class="relative bg-black rounded-3xl overflow-hidden border border-white/10">
-                <img src="about-us.jpg" alt="Our Team" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-700 transform group-hover:scale-105">
-            </div>
+            <div class="relative group bg-black rounded-3xl overflow-hidden border-2 border-yellow-500/40 hover:border-yellow-400 transition-all duration-700 shadow-[0_0_30px_rgba(234,179,8,0.15)] hover:shadow-[0_0_40px_rgba(234,179,8,0.3)]">
+    <!-- গোল্ডেন গ্লো ওভারলে ইফেক্ট -->
+    <div class="absolute inset-0 bg-gradient-to-tr from-yellow-600/20 via-transparent to-yellow-300/10 opacity-60 group-hover:opacity-30 transition-opacity duration-700 z-10 pointer-events-none"></div>
+
+    <!-- ইমেজ ও জুম অ্যানিমেশন -->
+    <img src="about-us.jpg" alt="Our Team" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 transform group-hover:scale-110">
+</div>
         </div>
 
        <div class="about-text">
@@ -153,30 +157,60 @@
     <div class="container mx-auto px-6 text-center">
         <h2 class="text-4xl font-black mb-4 uppercase tracking-tighter text-white">Our Core Values</h2>
         <div class="w-20 h-1 bg-primary mx-auto mb-16"></div>
-        <div class="grid md:grid-cols-3 gap-12">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             
-            <div class="group p-8 rounded-3xl border border-white/5 hover:bg-primary transition-all duration-300 cursor-default">
-                <div class="w-20 h-20 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-6 border border-primary/20 group-hover:bg-white group-hover:rotate-6 transition-all duration-500">
-                    <i class='bx bx-rocket text-4xl text-primary group-hover:text-black transition-colors'></i>
+            <!-- Card 1: Innovation -->
+            <div class="group p-8 rounded-3xl border border-white/5 hover:border-primary/40 bg-white/[0.01] hover:bg-primary transition-all duration-500 cursor-default shadow-xl">
+                <div class="w-20 h-20 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-6 border border-primary/20 group-hover:bg-black group-hover:rotate-6 transition-all duration-500 shadow-md">
+                    <i class='bx bx-rocket text-4xl text-primary group-hover:text-primary transition-colors'></i>
                 </div>
                 <h3 class="text-xl font-bold mb-3 text-white group-hover:text-black transition-colors">Innovation</h3>
-                <p class="text-gray-500 text-sm group-hover:text-black/80 transition-colors">We stay ahead of global trends to provide the latest tech solutions.</p>
+                <p class="text-gray-400 text-sm group-hover:text-black/80 transition-colors">We stay ahead of global trends to provide the latest tech solutions.</p>
             </div>
 
-            <div class="group p-8 rounded-3xl border border-white/5 hover:bg-primary transition-all duration-500 cursor-default">
-                <div class="w-20 h-20 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-6 border border-primary/20 group-hover:bg-white group-hover:rotate-6 transition-all duration-500">
-                    <i class='bx bx-target-lock text-4xl text-primary group-hover:text-black transition-colors'></i>
+            <!-- Card 2: Quality First -->
+            <div class="group p-8 rounded-3xl border border-white/5 hover:border-primary/40 bg-white/[0.01] hover:bg-primary transition-all duration-500 cursor-default shadow-xl">
+                <div class="w-20 h-20 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-6 border border-primary/20 group-hover:bg-black group-hover:rotate-6 transition-all duration-500 shadow-md">
+                    <i class='bx bx-target-lock text-4xl text-primary group-hover:text-primary transition-colors'></i>
                 </div>
                 <h3 class="text-xl font-bold mb-3 text-white group-hover:text-black transition-colors">Quality First</h3>
-                <p class="text-gray-500 text-sm group-hover:text-black/80 transition-colors">No compromise on code quality or premium design aesthetics.</p>
+                <p class="text-gray-400 text-sm group-hover:text-black/80 transition-colors">No compromise on code quality or premium design aesthetics.</p>
             </div>
 
-            <div class="group p-8 rounded-3xl border border-white/5 hover:bg-primary transition-all duration-500 cursor-default">
-                <div class="w-20 h-20 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-6 border border-primary/20 group-hover:bg-white group-hover:rotate-6 transition-all duration-500">
-                    <i class='bx bx-support text-4xl text-primary group-hover:text-black transition-colors'></i>
+            <!-- Card 3: 24/7 Support -->
+            <div class="group p-8 rounded-3xl border border-white/5 hover:border-primary/40 bg-white/[0.01] hover:bg-primary transition-all duration-500 cursor-default shadow-xl">
+                <div class="w-20 h-20 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-6 border border-primary/20 group-hover:bg-black group-hover:rotate-6 transition-all duration-500 shadow-md">
+                    <i class='bx bx-support text-4xl text-primary group-hover:text-primary transition-colors'></i>
                 </div>
                 <h3 class="text-xl font-bold mb-3 text-white group-hover:text-black transition-colors">24/7 Support</h3>
-                <p class="text-gray-500 text-sm group-hover:text-black/80 transition-colors">Our relationship continues with dedicated support after delivery.</p>
+                <p class="text-gray-400 text-sm group-hover:text-black/80 transition-colors">Our relationship continues with dedicated support after delivery.</p>
+            </div>
+
+            <!-- Card 4: Client Trust (New) -->
+            <div class="group p-8 rounded-3xl border border-white/5 hover:border-primary/40 bg-white/[0.01] hover:bg-primary transition-all duration-500 cursor-default shadow-xl">
+                <div class="w-20 h-20 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-6 border border-primary/20 group-hover:bg-black group-hover:rotate-6 transition-all duration-500 shadow-md">
+                    <i class='bx bx-shield-quarter text-4xl text-primary group-hover:text-primary transition-colors'></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-white group-hover:text-black transition-colors">Client Trust</h3>
+                <p class="text-gray-400 text-sm group-hover:text-black/80 transition-colors">Building long-term partnerships through transparency and honesty.</p>
+            </div>
+
+            <!-- Card 5: Scalability (New) -->
+            <div class="group p-8 rounded-3xl border border-white/5 hover:border-primary/40 bg-white/[0.01] hover:bg-primary transition-all duration-500 cursor-default shadow-xl">
+                <div class="w-20 h-20 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-6 border border-primary/20 group-hover:bg-black group-hover:rotate-6 transition-all duration-500 shadow-md">
+                    <i class='bx bx-line-chart text-4xl text-primary group-hover:text-primary transition-colors'></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-white group-hover:text-black transition-colors">Scalability</h3>
+                <p class="text-gray-400 text-sm group-hover:text-black/80 transition-colors">Developing robust architectures that grow seamlessly with your business.</p>
+            </div>
+
+            <!-- Card 6: Fast Delivery (New) -->
+            <div class="group p-8 rounded-3xl border border-white/5 hover:border-primary/40 bg-white/[0.01] hover:bg-primary transition-all duration-500 cursor-default shadow-xl">
+                <div class="w-20 h-20 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-6 border border-primary/20 group-hover:bg-black group-hover:rotate-6 transition-all duration-500 shadow-md">
+                    <i class='bx bx-time-five text-4xl text-primary group-hover:text-primary transition-colors'></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-white group-hover:text-black transition-colors">Fast Delivery</h3>
+                <p class="text-gray-400 text-sm group-hover:text-black/80 transition-colors">Ensuring timely execution without compromising on industry standards.</p>
             </div>
 
         </div>
@@ -189,51 +223,73 @@
             <h2 class="text-4xl md:text-4xl font-black uppercase tracking-tight text-white">The professionals behind our <span class="text-primary">success</span></h2>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div class="team-card bg-white/5 border border-white/10 p-8 rounded-3xl text-center group hover:bg-primary transition-all duration-500">
-                <div class="relative w-32 h-32 mx-auto mb-6 overflow-hidden rounded-2xl border border-white/10">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+            
+            <!-- Card 1: Farhana Khatun (COO & Full Stack Dev) -->
+            <div class="team-card bg-white/5 border border-white/10 p-8 rounded-3xl text-center group hover:bg-primary transition-all duration-500 shadow-xl">
+                <div class="relative w-32 h-32 mx-auto mb-6 overflow-hidden rounded-2xl border border-white/10 group-hover:border-black/30 shadow-md">
+                    <img src="my img.jpeg" alt="Farhana Khatun" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all">
+                </div>
+                <h3 class="text-xl font-bold text-white mb-1 group-hover:text-black transition-colors">Farhana Khatun</h3>
+                <p class="text-primary text-xs font-bold uppercase mb-4 group-hover:text-black tracking-tighter">COO & MERN Dev</p>
+                <div class="flex justify-center space-x-4 text-gray-400 group-hover:text-black text-lg border-t border-white/10 group-hover:border-black/20 pt-4 transition-colors">
+                    <a href="#" class="hover:opacity-75"><i class='bx bxl-linkedin-square'></i></a>
+                    <a href="#" class="hover:opacity-75"><i class='bx bxl-github'></i></a>
+                </div>
+            </div>
+
+            <!-- Card 2: Shoumo Shahriar Araf -->
+            <div class="team-card bg-white/5 border border-white/10 p-8 rounded-3xl text-center group hover:bg-primary transition-all duration-500 shadow-xl">
+                <div class="relative w-32 h-32 mx-auto mb-6 overflow-hidden rounded-2xl border border-white/10 group-hover:border-black/30 shadow-md">
                     <img src="araf.jpeg" alt="Shoumo" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all">
                 </div>
-                <h3 class="text-xl font-bold text-white mb-1 group-hover:text-black">Shoumo Shahriar Araf</h3>
-                <p class="text-primary text-xs font-bold uppercase mb-4 group-hover:text-black/80 tracking-tighter">Project Manager</p>
-                <div class="flex justify-center space-x-4 text-gray-500 group-hover:text-black text-lg border-t border-white/10 group-hover:border-black/20 pt-4">
-                    <a href="#"><i class='bx bxl-linkedin-square'></i></a>
-                    <a href="#"><i class='bx bxl-github'></i></a>
+                <h3 class="text-xl font-bold text-white mb-1 group-hover:text-black transition-colors">Shoumo S. Araf</h3>
+                <p class="text-primary text-xs font-bold uppercase mb-4 group-hover:text-black tracking-tighter">Project Manager</p>
+                <div class="flex justify-center space-x-4 text-gray-400 group-hover:text-black text-lg border-t border-white/10 group-hover:border-black/20 pt-4 transition-colors">
+                    <a href="#" class="hover:opacity-75"><i class='bx bxl-linkedin-square'></i></a>
+                    <a href="#" class="hover:opacity-75"><i class='bx bxl-github'></i></a>
                 </div>
             </div>
-            <div class="team-card bg-white/5 border border-white/10 p-8 rounded-3xl text-center group hover:bg-primary transition-all duration-500">
-                <div class="relative w-32 h-32 mx-auto mb-6 overflow-hidden rounded-2xl border border-white/10">
+
+            <!-- Card 3: Ripa -->
+            <div class="team-card bg-white/5 border border-white/10 p-8 rounded-3xl text-center group hover:bg-primary transition-all duration-500 shadow-xl">
+                <div class="relative w-32 h-32 mx-auto mb-6 overflow-hidden rounded-2xl border border-white/10 group-hover:border-black/30 shadow-md">
                     <img src="ripa.jpeg" alt="Ripa" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all">
                 </div>
-                <h3 class="text-xl font-bold text-white mb-1 group-hover:text-black">Ripa</h3>
-                <p class="text-primary text-xs font-bold uppercase mb-4 group-hover:text-black/80 tracking-tighter">Laravel Expert</p>
-                <div class="flex justify-center space-x-4 text-gray-500 group-hover:text-black text-lg border-t border-white/10 group-hover:border-black/20 pt-4">
-                    <a href="#"><i class='bx bxl-linkedin-square'></i></a>
-                    <a href="#"><i class='bx bxl-github'></i></a>
+                <h3 class="text-xl font-bold text-white mb-1 group-hover:text-black transition-colors">Ripa</h3>
+                <p class="text-primary text-xs font-bold uppercase mb-4 group-hover:text-black tracking-tighter">Laravel Expert</p>
+                <div class="flex justify-center space-x-4 text-gray-400 group-hover:text-black text-lg border-t border-white/10 group-hover:border-black/20 pt-4 transition-colors">
+                    <a href="#" class="hover:opacity-75"><i class='bx bxl-linkedin-square'></i></a>
+                    <a href="#" class="hover:opacity-75"><i class='bx bxl-github'></i></a>
                 </div>
             </div>
-            <div class="team-card bg-white/5 border border-white/10 p-8 rounded-3xl text-center group hover:bg-primary transition-all duration-500">
-                <div class="relative w-32 h-32 mx-auto mb-6 overflow-hidden rounded-2xl border border-white/10">
+
+            <!-- Card 4: Hasan Md. Eyahiya -->
+            <div class="team-card bg-white/5 border border-white/10 p-8 rounded-3xl text-center group hover:bg-primary transition-all duration-500 shadow-xl">
+                <div class="relative w-32 h-32 mx-auto mb-6 overflow-hidden rounded-2xl border border-white/10 group-hover:border-black/30 shadow-md">
                     <img src="hasan.jpeg" alt="Hasan" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all">
                 </div>
-                <h3 class="text-xl font-bold text-white mb-1 group-hover:text-black">Hasan Md. Eyahiya</h3>
-                <p class="text-primary text-xs font-bold uppercase mb-4 group-hover:text-black/80 tracking-tighter">UI/UX Designer</p>
-                <div class="flex justify-center space-x-4 text-gray-500 group-hover:text-black text-lg border-t border-white/10 group-hover:border-black/20 pt-4">
-                    <a href="#"><i class='bx bxl-behance'></i></a>
-                    <a href="#"><i class='bx bxl-dribbble'></i></a>
+                <h3 class="text-xl font-bold text-white mb-1 group-hover:text-black transition-colors">Hasan Md. Eyahiya</h3>
+                <p class="text-primary text-xs font-bold uppercase mb-4 group-hover:text-black tracking-tighter">UI/UX Designer</p>
+                <div class="flex justify-center space-x-4 text-gray-400 group-hover:text-black text-lg border-t border-white/10 group-hover:border-black/20 pt-4 transition-colors">
+                    <a href="#" class="hover:opacity-75"><i class='bx bxl-behance'></i></a>
+                    <a href="#" class="hover:opacity-75"><i class='bx bxl-dribbble'></i></a>
                 </div>
             </div>
-            <div class="team-card bg-white/5 border border-white/10 p-8 rounded-3xl text-center group hover:bg-primary transition-all duration-500">
-                <div class="relative w-32 h-32 mx-auto mb-6 overflow-hidden rounded-2xl border border-white/10">
+
+            <!-- Card 5: Srity -->
+            <div class="team-card bg-white/5 border border-white/10 p-8 rounded-3xl text-center group hover:bg-primary transition-all duration-500 shadow-xl">
+                <div class="relative w-32 h-32 mx-auto mb-6 overflow-hidden rounded-2xl border border-white/10 group-hover:border-black/30 shadow-md">
                     <img src="sritypic.jpeg" alt="Srity" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all">
                 </div>
-                <h3 class="text-xl font-bold text-white mb-1 group-hover:text-black">Srity</h3>
-                <p class="text-primary text-xs font-bold uppercase mb-4 group-hover:text-black/80 tracking-tighter">SEO Specialist</p>
-                <div class="flex justify-center space-x-4 text-gray-500 group-hover:text-black text-lg border-t border-white/10 group-hover:border-black/20 pt-4">
-                    <a href="#"><i class='bx bxl-facebook-square'></i></a>
-                    <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                <h3 class="text-xl font-bold text-white mb-1 group-hover:text-black transition-colors">Srity</h3>
+                <p class="text-primary text-xs font-bold uppercase mb-4 group-hover:text-black tracking-tighter">SEO Specialist</p>
+                <div class="flex justify-center space-x-4 text-gray-400 group-hover:text-black text-lg border-t border-white/10 group-hover:border-black/20 pt-4 transition-colors">
+                    <a href="#" class="hover:opacity-75"><i class='bx bxl-facebook-square'></i></a>
+                    <a href="#" class="hover:opacity-75"><i class='bx bxl-instagram-alt'></i></a>
                 </div>
             </div>
+
         </div>
     </div>
 </section>
