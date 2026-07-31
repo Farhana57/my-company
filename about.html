@@ -41,6 +41,21 @@
     .feature-item:hover span {
         color: #050505 !important;
     }
+        /* টিম কার্ড হোভার এবং ট্রানজিশন ফিক্স */
+.team-card {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-card:hover h3,
+.team-card:hover p,
+.team-card:hover div i,
+.team-card:hover a {
+    color: #000000 !important;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+}
 </style>
 </head>
 <body class="bg-[#050505] text-white font-sans">
